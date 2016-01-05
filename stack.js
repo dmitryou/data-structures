@@ -21,6 +21,9 @@ Stack.prototype.pop = function() {
  
         return deletedData;
     }
+    else {
+        return null;
+    }
 };
 
 Stack.prototype.printStack = function() {
@@ -29,15 +32,18 @@ Stack.prototype.printStack = function() {
 
 // Test it
 stack = new Stack();
-console.log("Pushed",4);
+stack.printStack();
+var nullPoped = stack.pop();
+console.log("Poped value",nullPoped);
+console.log("Pushed value",4);
 stack.push(4);
 stack.printStack();
-console.log("Pushed",5);
+console.log("Pushed value",5);
 stack.push(5);
 stack.printStack();
-console.log("Pushed",8);
+console.log("Pushed value",8);
 stack.push(8);
 stack.printStack();
 var poped = stack.pop();
-console.log("Poped",poped);
+console.log("Poped value",poped);
 stack.printStack();

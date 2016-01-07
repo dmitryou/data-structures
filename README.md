@@ -21,3 +21,7 @@ var poped = stack.pop();
 Print stack content:
 
 stack.printStack();
+
+QUEUE:
+
+
